@@ -275,9 +275,10 @@ tbody td:first-child { font-weight: 600; color: var(--dark); }
 .salary-role { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 8px; }
 .salary-role-my { font-size: 11px; color: var(--muted); font-style: italic; margin-bottom: 12px; }
 .salary-range { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--dark); }
-.salary-old { font-size: 11px; color: var(--muted); text-decoration: line-through; margin-top: 4px; }
-.salary-up { font-size: 10px; background: #D1FAE5; color: var(--success); padding: 2px 8px; border-radius: 100px; font-weight: 600; display: inline-block; margin-top: 6px; }
-
+.salary-old,
+.salary-up {
+    display: none !important;
+}
 /* ── ALLOWANCE GRID ── */
 .allow-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 28px; }
 .allow-card {
